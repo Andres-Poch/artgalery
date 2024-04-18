@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial;
+    }
+
+    .hero-image {
+        position: relative;
+        height: 100vh;
+        background-image: url(fondo-copia.jpg);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .btn-container {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .btn {
+        display: inline-block;
+        margin: 10px;
+        border: none;
+        color: white;
+        padding: 14px 28px;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.5); 
+        text-decoration: none;
+    }
+
+    .btn:hover {
+        background-color: rgba(0, 0, 0, 0.7); 
+    }
+</style>
+<body>
+   
+    <header>
+        <div class="btn-container">
+            <a href="Untitled-2.html">
+                <button class="btn Inicio">Inicio</button>
+            </a> 
+            <a href="Untitled-3.html">
+                <button class="btn Galeria">Galeria</button>
+            </a>
+            <a href="Untitled-4.html">
+                <button class="btn Contacto">Contacto</button>
+            </a>
+        </div>
+       
+    </header>
+    <br><br><br><br><br><br><br><br>
+
+
+    
+    <main>
+        <section>
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="tipo_solicitud">Tipo de solicitud:</label>
+                <select id="tipo_solicitud" name="tipo_solicitud" required>
+                    <option value="Compra">Compra</option>
+                    <option value="Consulta">Consulta</option>
+                    <option value="Venta">Venta</option>
+                </select><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <section>
+            <h2>Información de Contacto</h2>
+            <p>Dirección: Calle de la Galería, 123</p>
+            <p>Teléfono: +56988929419</p>
+        </section>
+    </main>
+
+</body>
+</html>

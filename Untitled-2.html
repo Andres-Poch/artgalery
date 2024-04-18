@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .hero-image {
+            position: relative;
+            height: 100vh;
+            background-image: url(fondo.jpg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .btn-container {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            border: none;
+            color: white;
+            padding: 14px 28px;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5); 
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: rgba(0, 0, 0, 0.7); /*Aumenta la opacidad al pasar el cursor*/
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero-image">
+    <div class="hero-text">
+        <h1 style="font-size:55px; color: black; position: relative; top: -95px;">Bienvenido a nuestra Galería de Arte</h1>
+        <h3 style="position: relative; top: 200px; color: black;">Les invitamos a descubrir nuevas piezas de arte</h3>
+        <p style="position: relative; top:240px; color: black;  margin-right: 40px; margin-left: 40px;;">Sumérgete en el vibrante mundo del arte contemporáneo chileno, donde la expresión creativa se fusiona con la rica historia y la diversidad cultural de este apasionante país. Nuestra galería te invita a explorar las obras más innovadoras y provocativas de artistas emergentes y consagrados de Chile. Desde pinturas audaces hasta esculturas vanguardistas y obras multimedia, cada pieza refleja la esencia única de la identidad chilena y aborda temas contemporáneos con una perspectiva fresca y enérgica. Descubre la vitalidad y el ingenio de la escena artística contemporánea de Chile mientras te sumerges en un viaje artístico que desafía los límites y estimula los sentidos.</p>
+    </div>
+
+    <!-- Botones sobre la imagen de fondo -->
+    <div class="btn-container">
+        <a href="Untitled-2.html" class="btn Inicio">Inicio</a>
+        <a href="Untitled-3.html" class="btn Galeria">Galeria</a>
+        <a href="Untitled-4.html" class="btn Contacto">Contacto</a>
+    </div>
+</div>
+
+</body>
+</html>

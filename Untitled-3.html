@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <meta charset="UTF-8">
+
+    <title>Galería</title>
+
+    <style>
+        
+        .hero-image {
+            position: relative;
+            height: 100vh;
+            background-image: url(fondo-copia.jpg); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+        }
+        .btn-container {
+            position: absolute;
+            top: 20px; /* Ajustamos la posición vertical de los botones */
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            width: 100%; /* Añadimos un ancho para que ocupe toda la página */
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            border: none;
+            color: white;
+            padding: 14px 28px;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5); 
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+
+<body>
+
+    <header>
+        <h1>Galería</h1>
+    </header>
+
+    <!-- Menú principal -->
+    <div class="btn-container">
+        <a href="Untitled-2.html">
+            <button class="btn Inicio">Inicio</button>
+        </a> 
+        <a href="Untitled-3.html">
+            <button class="btn Galeria">Galeria</button>
+        </a>
+        <a href="Untitled-4.html">
+            <button class="btn Contacto">Contacto</button>
+        </a>
+    </div>
+    <!-- Contenido principal -->
+    <main>
+        <section>
+            <h2>Obras de Arte</h2>
+            <div class="gallery">
+                <figure>
+                <img src="arte1.jpg"
+                width="400"
+                height="800">
+                <figcaption>
+                    Marcial Plaza Ferrand. <br>
+                    Retrato del pintor frances M. Le Poittevin. <br>
+                    1905. <br>
+                    Oleo sobre tela, 131cm X 106 cm.<br>
+                  </figcaption>
+            </figure>
+            <figure>
+                <img src="arte2.jpg"
+                >
+                <figcaption>
+                    Juan Francisco Gonzales. <br>
+                    Las carreras de Viña del Mar. <br>
+                    1892. <br>
+                    Oleo sobre madera, 22cm X 58cm.<br>
+                  </figcaption>
+            </figure>
+            <figure>
+                <img src="arte3.jpg"
+                >
+                <figcaption>
+                    Ernesto molina. <br>
+                    Patio de Napoles. <br>
+                    1896. <br>
+                    Oleo sobre tela, 43cm X 63cm.<br>
+                  </figcaption>
+            </figure>
+            <figure>
+                <img src="arte4.jpg"
+                >
+                <figcaption>
+                    Alberto Valenzuela Llanos. <br>
+                    Paisaje Lo Contador. <br>
+                    Oleo sobre tela, 145cm X 252cm. <br>
+                  </figcaption>
+            </figure>
+
+            </div>
+        </section>
+    </main>
+
+
+
+</body>
+</html>
